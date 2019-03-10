@@ -22,7 +22,6 @@ function errorCallback(err) {
 
 function draw() {
   ctx.drawImage(video, 0, 0);
-
   requestAnimationFrame(draw);
 }
 
