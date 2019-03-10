@@ -10,6 +10,10 @@ const promise = navigator.mediaDevices.getUserMedia(medias);
 promise.then(successCallback)
        .catch(errorCallback);
 
+window.onload = function(){
+  chgImg();
+}
+
 function successCallback(stream) {
   video.srcObject = stream;
   requestAnimationFrame(draw);
