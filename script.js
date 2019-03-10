@@ -11,7 +11,7 @@ promise.then(successCallback)
        .catch(errorCallback);
 
 window.onload = function(){
-  chgImg();
+  alert(‘dekita’);
 }
 
 function successCallback(stream) {
