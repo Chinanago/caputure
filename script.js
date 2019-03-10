@@ -25,8 +25,10 @@ function draw() {
   requestAnimationFrame(draw);
 }
 
+var png;
+
 function chgImg(){
-  var png = canvas.toDataURL();
+  png = canvas.toDataURL();
   document.getElementById("newImg").src = png;
 }
 
@@ -34,4 +36,4 @@ var hoge = setInterval(function(){
     alert("写真を取るぞ");
     chgImg();
     clearInterval(hoge);
-    },5000);
+    },3000);
