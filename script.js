@@ -29,3 +29,9 @@ function chgImg(){
   var png = canvas.toDataURL();
   document.getElementById("newImg").src = png;
 }
+
+var hoge = setInterval(function(){
+    alert("写真を取るぞ");
+    chgImg();
+    clearInterval(hoge);
+    },5000);
